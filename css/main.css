@@ -56,12 +56,30 @@ Ver: 0.0.1
   font-weight: 600;
 }
 
+@media screen and (max-width: 768px) {
+  /* line 40, ../scss/modules/_typography.scss */
+  .title_slide {
+    font-size: 1.5rem;
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+/* line 1, ../scss/modules/_buttons.scss */
+.navbar-toggle {
+  background-color: black !important;
+  border: none;
+}
+
+/* line 6, ../scss/modules/_buttons.scss */
+.navbar-toggle:hover {
+  background-color: #aa000c !important;
+}
+
 /* line 1, ../scss/modules/_sections.scss */
-img {
+.item img {
   margin: auto;
   z-index: 5;
   width: 100%;
-  object-fit: contain;
 }
 
 /* line 8, ../scss/modules/_sections.scss */
@@ -97,10 +115,34 @@ img {
   width: 100%;
 }
 
-/* line 33, ../scss/modules/_sections.scss */
+/* line 34, ../scss/modules/_sections.scss */
 .page2 {
   width: 95%;
   margin: auto;
+}
+
+/* line 39, ../scss/modules/_sections.scss */
+.page2 h3 {
+  padding-bottom: 4rem;
+}
+
+/* line 44, ../scss/modules/_sections.scss */
+#logoParade, #logoParadeTwo, #logoParadeThree {
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+
+/* line 49, ../scss/modules/_sections.scss */
+div.scrollableArea a {
+  display: block;
+  padding-right: 25px;
+  float: left;
+}
+
+/* line 54, ../scss/modules/_sections.scss */
+.scrollableArea a img {
+  max-height: 200px;
 }
 
 /* LAYOUTS - Page laout styles */
@@ -120,7 +162,7 @@ img {
   border-radius: 0;
   background-color: black;
   width: 100%;
-  border-color: rgba(255,255,255,1);
+  border-color: none;
   z-index: 15;
   transition: font-size 1s, position 1s, background-color 1s, font-weight 1s;
 }
@@ -130,7 +172,7 @@ img {
   font-size: 1.5rem;
   font-weight: 700;
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: white;
   color: black;
 }
 
