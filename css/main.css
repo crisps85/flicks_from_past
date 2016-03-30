@@ -23,24 +23,24 @@ Ver: 0.0.1
 }
 
 /* MODULES - Individual site components */
-/* line 12, ../scss/modules/_typography.scss */
+/* line 13, ../scss/modules/_typography.scss */
 .title_slide {
   font-size: 3rem;
   font-family: "Cabin Sketch", cursive;
   padding: 1rem;
 }
 
-/* line 17, ../scss/modules/_typography.scss */
+/* line 18, ../scss/modules/_typography.scss */
 .title_slide h1 {
   font-weight: 700;
 }
 
-/* line 21, ../scss/modules/_typography.scss */
+/* line 22, ../scss/modules/_typography.scss */
 .title_h1 {
   color: black;
 }
 
-/* line 25, ../scss/modules/_typography.scss */
+/* line 26, ../scss/modules/_typography.scss */
 .best_sellers h1 {
   margin-top: 2rem;
   background: #aa000c;
@@ -52,12 +52,39 @@ Ver: 0.0.1
 }
 
 /* line 35, ../scss/modules/_typography.scss */
+.title h4 {
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+  margin-bottom: 4rem;
+}
+
+/* line 41, ../scss/modules/_typography.scss */
 .best_sellers h3 {
   font-weight: 600;
 }
 
+/* line 45, ../scss/modules/_typography.scss */
+.page3 h4 {
+  text-transform: uppercase;
+}
+
+/* line 50, ../scss/modules/_typography.scss */
+.fa-facebook-official:hover {
+  color: #324c8d;
+}
+
+/* line 54, ../scss/modules/_typography.scss */
+.fa-twitter:hover {
+  color: #058df1;
+}
+
+/* line 57, ../scss/modules/_typography.scss */
+.fa-youtube:hover {
+  color: #d21a1d;
+}
+
 @media screen and (max-width: 768px) {
-  /* line 40, ../scss/modules/_typography.scss */
+  /* line 62, ../scss/modules/_typography.scss */
   .title_slide {
     font-size: 1.5rem;
   }
@@ -145,6 +172,124 @@ div.scrollableArea a {
   max-height: 200px;
 }
 
+/* line 58, ../scss/modules/_sections.scss */
+#logoParade {
+  margin-bottom: 5rem;
+}
+
+/* line 62, ../scss/modules/_sections.scss */
+.latest_reviews {
+  position: relative;
+  background: black;
+  padding-top: 4rem;
+  color: white;
+}
+
+/* line 68, ../scss/modules/_sections.scss */
+.page3 {
+  margin: auto;
+  width: 95%;
+}
+
+/* line 78, ../scss/modules/_sections.scss */
+.col-sm-12 {
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+/* line 81, ../scss/modules/_sections.scss */
+.col-md-12 {
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* line 86, ../scss/modules/_sections.scss */
+.one {
+  padding-left: 0;
+  padding-right: 0;
+  overflow: hidden;
+  border-top: 2px solid black;
+}
+
+/* line 92, ../scss/modules/_sections.scss */
+.one img {
+  width: 100%;
+  border-bottom: 3px solid red;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+/* line 98, ../scss/modules/_sections.scss */
+.one_text_review {
+  padding-top: 1.5rem;
+}
+
+/* line 101, ../scss/modules/_sections.scss */
+.one_text_review h4 {
+  padding: none !important;
+}
+
+/* line 105, ../scss/modules/_sections.scss */
+.title h4 {
+  padding: 1rem;
+}
+
+/* line 108, ../scss/modules/_sections.scss */
+.two img {
+  width: 100%;
+  min-height: 164px;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  border-right: 3px solid #1dff3b;
+}
+
+/* line 115, ../scss/modules/_sections.scss */
+.two {
+  padding: 0;
+  width: 50%;
+  float: left;
+}
+
+/* line 121, ../scss/modules/_sections.scss */
+.two_1 {
+  width: 50%;
+  float: left;
+}
+
+/* line 126, ../scss/modules/_sections.scss */
+.little_shop_of_horrors {
+  padding-left: 0;
+  border-left: 2px solid black;
+  overflow: hidden;
+  height: 164px;
+  margin-bottom: 2rem;
+}
+
+/* line 133, ../scss/modules/_sections.scss */
+.daffy_duck {
+  overflow: hidden;
+  padding: 0;
+  border-top: 2px solid black;
+}
+
+/* line 138, ../scss/modules/_sections.scss */
+.daffy_duck img {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  width: 100%;
+  border-bottom: 3px solid #1dff3b;
+}
+
+/* line 144, ../scss/modules/_sections.scss */
+.daffy_duck a, .little_shop_of_horrors a {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 148, ../scss/modules/_sections.scss */
+.latest review a:hover {
+  text-decoration: none;
+}
+
 /* LAYOUTS - Page laout styles */
 /* line 1, ../scss/layouts/_nav.scss */
 .navbar-sub li {
@@ -169,14 +314,13 @@ div.scrollableArea a {
 
 /* line 17, ../scss/layouts/_nav.scss */
 .shrink {
-  font-size: 1.5rem;
   font-weight: 700;
   position: fixed;
   background-color: white;
   color: black;
 }
 
-/* line 27, ../scss/layouts/_nav.scss */
+/* line 26, ../scss/layouts/_nav.scss */
 .shrink .active > a,
 .shrink .active > a,
 .shrink .active > a:focus {
@@ -184,17 +328,28 @@ div.scrollableArea a {
   color: #aa000c !important;
 }
 
-/* line 32, ../scss/layouts/_nav.scss */
+/* line 31, ../scss/layouts/_nav.scss */
+#navbar li {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+/* line 35, ../scss/layouts/_nav.scss */
 .shrink a {
   color: black !important;
 }
 
-/* line 35, ../scss/layouts/_nav.scss */
+/* line 38, ../scss/layouts/_nav.scss */
+.shrink .navbar-brand {
+  font-size: 2rem;
+}
+
+/* line 41, ../scss/layouts/_nav.scss */
 .shrink a:hover {
   color: #aa000c !important;
 }
 
-/* line 38, ../scss/layouts/_nav.scss */
+/* line 44, ../scss/layouts/_nav.scss */
 .navbar-inverse {
   border: none !important;
 }

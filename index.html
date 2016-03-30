@@ -59,7 +59,7 @@
   <script src="js/smooth_scroll/jquery.kinetic.js" type="text/javascript"></script>
 
   <!-- Smooth Div Scroll 1.3 minified -->
-  <script src="js/smooth_scroll/jquery.smoothdivscroll-1.3.js" type="text/javascript"></script>
+  <script src="js/smooth_scroll/jquery.smoothDivScroll-1.3.js" type="text/javascript"></script>
 
   <!-- If you want to look at the uncompressed version you find it at
      js/source/jquery.smoothDivScroll-1.3.js -->
@@ -144,16 +144,16 @@ $("#logoParadeThree").bind("mouseover", function() {
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Titles</a></li>
-            <li><a href="#about">Best Selling</a></li>
-            <li><a href="#contact">Reviews</a></li>
+            <li class="active"><a href="#header">Titles</a></li>
+            <li><a href="#best_sellers">Best Selling</a></li>
+            <li><a href="#latest_reviews">Reviews</a></li>
             <li><a href='#features'>Features</a></li>
             <li>
               <form class="navbar-form navbar-left" role="search">
                 <div class="form-group">
                   <input type="text" class="form-control" placeholder="Search">
                 </div>
-                <button type="submit" class="btn btn-default">Submit</button>
+<!--                 <button type="submit" class="btn-sm btn-primary">Submit</button> -->
               </form>
             </li>
           </ul>
@@ -166,7 +166,7 @@ $("#logoParadeThree").bind("mouseover", function() {
       </div>
     </nav>
 
-    <header>
+    <a name='header'><header></a>
 
       <section class='carousel_1'>
           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -312,7 +312,7 @@ $("#logoParadeThree").bind("mouseover", function() {
               </div>
       </section> <!--end carousel_1-->
     </header>
-    <section class='best_sellers'>
+    <a name="best_sellers"><section class='best_sellers'></a>
       <div class='page2'>
       <h1>Best Sellers?</h1>
       <h3>Top Seller Amazon Products</h3>
@@ -323,28 +323,88 @@ $("#logoParadeThree").bind("mouseover", function() {
           <div class='scrollableArea'>
           <a href='http://www.amazon.co.uk/The-Hunger-Games-Mockingjay-Part/dp/B01844CN8A%3FSubscriptionId%3DAKIAJDXX6QLV4XCJCI6A%26tag%3Dlowemedi-21%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB01844CN8A' target="_blank"><img src="http://ecx.images-amazon.com/images/I/91M5dfPHj0L._SY445_.jpg" alt="Hunger Games" id="hunger_games" /></a>
           <a href='http://www.amazon.co.uk/Game-Thrones-Season-5-DVD/dp/B010BY2AQ6%3FSubscriptionId%3DAKIAJDXX6QLV4XCJCI6A%26tag%3Dlowemedi-21%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB010BY2AQ6' target="_blank"><img src="http://ecx.images-amazon.com/images/I/A1-lveXgEBL._SY445_.jpg" alt="Game of Thrones" id="game_of_thrones" /></a>
-          <a href='http://www.amazon.co.uk/Star-Wars-Awakens-Limited-Edition/dp/B019FFA2AI%3FSubscriptionId%3DAKIAJDXX6QLV4XCJCI6A%26tag%3Dlowemedi-21%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB019FFA2AI'><img src="http://ecx.images-amazon.com/images/I/81IX8-b5lGL._SX342_.jpg" alt="Star Wars" id="star_wars" /></a>
-          <a href='http://www.amazon.co.uk/The-Lady-Van-Maggie-Smith/dp/B00ZS1SSVO%3FSubscriptionId%3DAKIAJDXX6QLV4XCJCI6A%26tag%3Dlowemedi-21%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00ZS1SSVO'><img src="http://ecx.images-amazon.com/images/I/91TcUz0eyQL._SX342_.jpg" alt="The Lady in the Van" id="the_lady_in_the_van" /> </a>
+          <a href='http://www.amazon.co.uk/Star-Wars-Awakens-Limited-Edition/dp/B019FFA2AI%3FSubscriptionId%3DAKIAJDXX6QLV4XCJCI6A%26tag%3Dlowemedi-21%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB019FFA2AI' target='blank'><img src="http://ecx.images-amazon.com/images/I/81IX8-b5lGL._SX342_.jpg" alt="Star Wars" id="star_wars" /></a>
+          <a href='http://www.amazon.co.uk/The-Lady-Van-Maggie-Smith/dp/B00ZS1SSVO%3FSubscriptionId%3DAKIAJDXX6QLV4XCJCI6A%26tag%3Dlowemedi-21%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00ZS1SSVO' target='blank'><img src="http://ecx.images-amazon.com/images/I/91TcUz0eyQL._SX342_.jpg" alt="The Lady in the Van" id="the_lady_in_the_van" /> </a>
           <a href='http://www.amazon.co.uk/Spectre-Blu-ray-Copy-Daniel-Craig/dp/B00QS3NY1A%3FSubscriptionId%3DAKIAJDXX6QLV4XCJCI6A%26tag%3Dlowemedi-21%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00QS3NY1A' target="_blank"><img src="http://ecx.images-amazon.com/images/I/81PH-KOfzzL._SX342_.jpg" alt="James Bond - Spectre" id="james_bond_spectre" /> </a>
-          <a href='http://www.amazon.co.uk/Happy-Valley-DVD-Sarah-Lancashire/dp/B00JRXHEAA%3FSubscriptionId%3DAKIAJDXX6QLV4XCJCI6A%26tag%3Dlowemedi-21%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00JRXHEAA'<img src="http://ecx.images-amazon.com/images/I/91n%2BJjJyXGL._SY445_.jpg" alt="Happy Valley" id="happy_valley" /> </a>
-          <a href='http://www.amazon.co.uk/Star-Wars-Awakens-Limited-Edition/dp/B01C47GETW%3FSubscriptionId%3DAKIAJDXX6QLV4XCJCI6A%26tag%3Dlowemedi-21%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB01C47GETW'><img src="http://ecx.images-amazon.com/images/I/81LuJT6VT4L._SX342_.jpg" alt="Star Wars - The force awakens with Limited Edition Sleeve" id="star_wars_the_force_awakens" /> </a>
-          <a href='http://www.amazon.co.uk/Deadpool-Blu-ray-Ryan-Reynolds/dp/B01BDUS0NY%3FSubscriptionId%3DAKIAJDXX6QLV4XCJCI6A%26tag%3Dlowemedi-21%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB01BDUS0NY'><img src="http://ecx.images-amazon.com/images/I/81EPTEC9y9L._SX342_.jpg" alt="Deadpool" id="deadpool" /> </a>
+          <a href='http://www.amazon.co.uk/Happy-Valley-DVD-Sarah-Lancashire/dp/B00JRXHEAA%3FSubscriptionId%3DAKIAJDXX6QLV4XCJCI6A%26tag%3Dlowemedi-21%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00JRXHEAA' target='blank'<img src="http://ecx.images-amazon.com/images/I/91n%2BJjJyXGL._SY445_.jpg" alt="Happy Valley" id="happy_valley" /> </a>
+          <a href='http://www.amazon.co.uk/Star-Wars-Awakens-Limited-Edition/dp/B01C47GETW%3FSubscriptionId%3DAKIAJDXX6QLV4XCJCI6A%26tag%3Dlowemedi-21%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB01C47GETW' target='blank'><img src="http://ecx.images-amazon.com/images/I/81LuJT6VT4L._SX342_.jpg" alt="Star Wars - The force awakens with Limited Edition Sleeve" id="star_wars_the_force_awakens" /> </a>
+          <a href='http://www.amazon.co.uk/Deadpool-Blu-ray-Ryan-Reynolds/dp/B01BDUS0NY%3FSubscriptionId%3DAKIAJDXX6QLV4XCJCI6A%26tag%3Dlowemedi-21%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB01BDUS0NY' target='blank'><img src="http://ecx.images-amazon.com/images/I/81EPTEC9y9L._SX342_.jpg" alt="Deadpool" id="deadpool" /> </a>
+          <a href='http://www.amazon.co.uk/The-Good-Dinosaur-Blu-ray-Peterson/dp/B018K15Y3I%3FSubscriptionId%3DAKIAJDXX6QLV4XCJCI6A%26tag%3Dlowemedi-21%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB018K15Y3I' target='blank'><img src="http://ecx.images-amazon.com/images/I/81RV-oA47mL._SX342_.jpg" alt="The Good Dinosaur" id="the_good_dinosaur" /> </a>
+          <a href='http://www.amazon.co.uk/The-Martian-Blu-ray-UV-Copy/dp/B015Q04ED2%3FSubscriptionId%3DAKIAJDXX6QLV4XCJCI6A%26tag%3Dlowemedi-21%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB015Q04ED2' target='blank'><img src="http://ecx.images-amazon.com/images/I/91MQj1HvCPL._SX342_.jpg" alt="The Martian" id="the_martian" /> </a>
+          <a href='http://www.amazon.co.uk/The-Good-Dinosaur-Blu-ray-Peterson/dp/B018K15Y3I%3FSubscriptionId%3DAKIAJDXX6QLV4XCJCI6A%26tag%3Dlowemedi-21%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB018K15Y3I' target='blank'><img src="http://ecx.images-amazon.com/images/I/81RV-oA47mL._SX342_.jpg" alt="The Good Dinosaur" id="the_good_dinosaur" /> </a>
+
         </div>
       </div>
     </div>
         </div>
     </section>
 
-    <section class='section_2'>this is section 2 information/data 
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <a name='latest_reviews'><section class='latest_reviews'></a>
+      <div class='page3'>
+        <div class = 'container-fluid'>
+          <div class='row title'>
+            <h4>latest reviews //</h4>
+          </div> <!-- end div class='row'-->
+          <div class='row'>
+            <div class='col-sm-12 col-md-6'>
+              <div class='col-sm-12 col-md-12 one'>
+                <img src='http://images.low-emedia.com/chasing-amy.jpg'>
+                <div class='col-sm-12 col-md-12 one_text_review'>
+                  
+<h4>Chasing Amy</h4>
+<p>Kevin Smith’s third film could be considered critically the best film he has ever made. Following from Mallrats, which was panned by the critics yet loved by audiences (after it was released on the home video market), this low budget film was not expected to do much....Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Date: 15th February, 2015
+              </p>
+              </div>
+              </div>
+            </div>
+            <div class='col-sm-12 col-md-6'>
+              <div class='col-sm-12 col-md-12 little_shop_of_horrors'>
+                <div class='col-sm-6 col-md-5 two'>
+                  <a href='#'><img src='http://images.low-emedia.com/little-shop-of-horrors.jpg'>
+                </div>
+                <div class='col-sm-6 col-md-7 two_1'>
+                  <h4>Little Shop of Horrors</h4>
+                  <p>Originally a 1960s movie, which was revived for an off-Broadway musical, then remade by director Frank Oz, this is one of the funniest musicals I have ever seen. The Eighties was responsible for some very strange movies, this is definitely one of those....
+                  Date: 28th June, 2015</p>
+                </div></a>
+              </div> <!-- end little_shop_of_horrors div-->
+              <div class='col-sm-12 col-md-12 daffy_duck'>
+                <a href='#'><img src='http://images.low-emedia.com/duck_dodgers.jpg'>
+                  <h4>Daffy Duck – Duck Dodgers and the 24½th century</h4>
+                  <p>This is one of the most famous of all the Looney Tune cartoons ever made, and for me one of the funniest. It's the one that I remember Marvin the Martian from the most. Daffy Duck is so much fun as well....
+                  Date: 15th February, 2015</p>
+              </div></a>
+            </div>
+
+          </div> <!-- end div class=row-->
+
+        </div> <!-- end container-fluid-->
+      </div> <!-- end div class page3-->
+
     </section>
 
-
+<script>
+    jQuery(function() {
+        jQuery('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = jQuery(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                    jQuery('html,body').animate({
+                        scrollTop: target.offset ().top -50
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+</script>
 
   </body>
 </html>
