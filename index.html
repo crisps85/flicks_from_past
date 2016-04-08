@@ -64,88 +64,19 @@
   <!-- If you want to look at the uncompressed version you find it at
      js/source/jquery.smoothDivScroll-1.3.js -->
 
-
   <!-- Plugin initialization -->
-  <script type="text/javascript">
+  <script src='js/initialise_smooth_scroll.js' type="text/javascript">
     // Initialize the plugin with no custom options
-$(document).ready(function () {
-  $("#logoParade").smoothDivScroll({
-    autoScrollingMode: "always", 
-    autoScrollingDirection: "endlessLoopLeft", 
-    autoScrollingStep: 1, 
-    autoScrollingInterval: 45, 
-    getContentOnLoad: { 
-      method: "getAjaxContent",
-      content: "ajaxContent.html",
-      manipulationMethod: "replace"
-    }
-  });
-      
-  $("#logoParadeTwo").smoothDivScroll({
-    autoScrollingMode: "always", 
-    autoScrollingDirection: "endlessLoopRight", 
-    autoScrollingStep: 2, 
-    autoScrollingInterval: 5, 
-    getContentOnLoad: { 
-      method: "getAjaxContent",
-      content: "ajaxContent.html",
-      manipulationMethod: "replace"
-    }
-  });
-      
-  $("#logoParadeThree").smoothDivScroll({
-    autoScrollingMode: "always", 
-    autoScrollingDirection: "endlessLoopLeft", 
-    autoScrollingStep: 1, 
-    autoScrollingInterval: 15, 
-    getContentOnLoad: { 
-      method: "getAjaxContent",
-      content: "ajaxContent.html",
-      manipulationMethod: "replace"
-    }
-  });
-  $("#logoParade").bind("mouseover", function() {
-  $(this).smoothDivScroll("stopAutoScrolling");
-}).bind("mouseout", function() {
-  $(this).smoothDivScroll("startAutoScrolling");
-});
-      
-// Second logo parade
-$("#logoParadeTwo").bind("mouseover", function() {
-  $(this).smoothDivScroll("stopAutoScrolling");
-}).bind("mouseout", function() {
-  $(this).smoothDivScroll("startAutoScrolling");
-});
-      
-// Thirs logo parade
-$("#logoParadeThree").bind("mouseover", function() {
-  $(this).smoothDivScroll("stopAutoScrolling");
-}).bind("mouseout", function() {
-  $(this).smoothDivScroll("startAutoScrolling");
-});
-});
   </script>
 
 
 <script>
-
 $(function() {
-  $('.little_shop_of_horrors').hover(function() {
-    $('.little_shop_of_horrors h4').css('color', 'rgba(230,18,119,1)');
+  $('article').hover(function() {
+    $(this).children('a').css('color', 'white');
   }, function() {
     // on mouseout, reset the background colour
-    $('.little_shop_of_horrors h4').css('color', '');
-  });
-});
-</script>
-
-<script>
-$(function() {
-  $('.daffy_duck').hover(function() {
-    $('.daffy_duck h4').css('color', 'rgba(230,18,119,1)');
-  }, function() {
-    // on mouseout, reset the background colour
-    $('.daffy_duck h4').css('color', '');
+    $(this).children('a').css('color', '');
   });
 });
 </script>
@@ -170,7 +101,7 @@ $(function() {
             <li class="active"><a href="#header">Titles</a></li>
             <li><a href="#best_sellers">Best Selling</a></li>
             <li><a href="#latest_reviews">Reviews</a></li>
-            <li><a href='#features'>Features</a></li>
+            <li><a href='#latest_features'>Features</a></li>
             <li>
               <form class="navbar-form navbar-left" role="search">
                 <div class="form-group">
@@ -362,56 +293,134 @@ $(function() {
         </div>
     </section>
 
-    <a name='latest_reviews'><section class='latest_reviews'></a>
-      <div class='page3'>
-        <div class = 'container-fluid'>
-          <div class='row title'>
-            <h4>latest reviews //</h4>
-          </div> <!-- end div class='row'-->
-          <div class='row'>
-            <div class='col-sm-12 col-md-6'>
-              <div class='col-sm-12 col-md-12 one'>
-                <img src='http://images.low-emedia.com/chasing-amy.jpg'>
-                <div class='col-sm-12 col-md-12 one_text_review'>
-                  
-<h4>Chasing Amy</h4>
-<p>Kevin Smith’s third film could be considered critically the best film he has ever made. Following from Mallrats, which was panned by the critics yet loved by audiences (after it was released on the home video market), this low budget film was not expected to do much....Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-Date: 15th February, 2015
-              </p>
-              </div>
-              </div>
-            </div>
-            <div class='col-sm-12 col-md-6'>
-              <div class='col-sm-12 col-md-12 little_shop_of_horrors'>
-                <div class='col-sm-6 col-md-5 two'>
+<main>
+    <a name='latest_reviews'><section class='latest_reviews row'></a>
+            <h2>latest reviews //</h2>
+          <div class='reviews big_image_left'>
+              <article class='articles chasing_amy'>
+                <a href='#'><img src='http://images.low-emedia.com/chasing-amy.jpg'>                  
+                <h4>Chasing Amy</h4>
+                <p>Kevin Smith’s third film could be considered critically the best film he has ever made. Following from Mallrats, which was panned by the critics yet loved by audiences (after it was released on the home video market), this low budget film was not expected to do much....Date: 15th February, 2015
+                </p>
+                </a>
+              </article>
+
+              <article class='articles'>
                   <a href='#'><img src='http://images.low-emedia.com/little-shop-of-horrors.jpg'>
-                </div>
-                <div class='col-sm-6 col-md-7 two_1'>
                   <h4>Little Shop of Horrors</h4>
                   <p>Originally a 1960s movie, which was revived for an off-Broadway musical, then remade by director Frank Oz, this is one of the funniest musicals I have ever seen. The Eighties was responsible for some very strange movies, this is definitely one of those....
                   Date: 28th June, 2015</p>
-                </div></a>
-              </div> <!-- end little_shop_of_horrors div-->
-              <div class='col-sm-12 col-md-12 daffy_duck'>
+              </article></a>
+
+              <article class='articles'>
                 <a href='#'><img src='http://images.low-emedia.com/duck_dodgers.jpg'>
                   <h4>Daffy Duck – Duck Dodgers and the 24½th century</h4>
                   <p>This is one of the most famous of all the Looney Tune cartoons ever made, and for me one of the funniest. It's the one that I remember Marvin the Martian from the most. Daffy Duck is so much fun as well....
                   Date: 15th February, 2015</p>
-              </div></a>
-            </div>
+              </article></a>
 
-          </div> <!-- end div class=row-->
+              <article class='quarter_width clearfix'>
+                <a href='#'><img src='http://images.low-emedia.com/the-amazing-spider-man.jpg'>
+                  <h4>The Amazing Spider-Man (2012)</h4>
+                  <p>
+                  Here we go with another reboot of Spider-Man. Everything is redone and recast, whether it is a good or bad thing. This version came out in 2012, about five years after Spier-Man 3 came out, and in many people’s eyes destroyed the franchise....
+                  Date: 14th February, 2015</p>
+              </article></a>
 
-        </div> <!-- end container-fluid-->
-      </div> <!-- end div class page3-->
+              <article class='quarter_width'>
+                <a href='#'><img src='http://images.low-emedia.com/kramer_vs._kramer.jpg'>
+                  <h4>Kramer vs. Kramer</h4>
+                  <p>
+                  As Meryl Streep receives critical acclaim for her performance as the Witch in Disney’s adaptation of Into the Woods, I was reminded of the first...
+                  Date: 31st January, 2015</p>
+              </article></a>
 
+              <article class='quarter_width'>
+                <a href='#'><img src='http://images.low-emedia.com/The-Great-Race-Poster.jpg'>
+                  <h4>The Great Race</h4>
+                  <p>
+                  This is a film that stars some of the classic actors of a golden age of cinema that were capable of doing just about anything. The film is entertaining, albeit long though. It has a humour that everyone can enjoy, from sophisticated wit to silly slapstick humour. This could be one of the most entertaining films I have ever seen....
+                  Date: 22nd January, 2015</p>
+              </article></a>
+
+
+              <article class='quarter_width'>
+                  <a href='#'><img src='http://images.low-emedia.com/tron_legacy_2.jpg'>
+                  <h4>Tron: Legacy</h4>
+                  <p>Tron: Legacy is another of those films that you either loved or you hated. Personally I loved it. I was a huge fan of the original, being a part of th...Date: 12th January, 2015</p>
+              </article></a>
+
+              <article class='quarter_width'>
+                <a href='#'><img src='http://images.low-emedia.com/la-mala-educacion.jpg'>
+                  <h4>La mala educación (Bad Education)</h4>
+                  <p>Opening the 57th Cannes Film Festival in 2004, Bad Education is one of Pedro Almodóvar’s most daring pieces of cinema. Less camp and surr...Date: 11th January, 2015</p>
+              </article></a>
+
+              <article class='quarter_width'>
+                <a href='#'><img src='http://images.low-emedia.com/madagascar_movie.jpg'>
+                  <h4>Madagascar</h4>
+                  <p>Do you like a move it move it? If not, then this film may not be for you, although if it doesn’t get you bopping your head and giggling then you...
+                  Date: 11th January, 2015</p>
+              </article></a>
+              <article class='articles chasing_amy big_image_right tron'>
+                <a href='#'><img src='http://images.low-emedia.com/tron.jpg'>                  
+                <h4>Tron</h4>
+                <p>Tron is very much a film that you either love or you hate. Most people that hate or find it hard to follow. I never had this problem. I do have to adm...
+                Date: 12th January, 2015
+                </p>
+                </a>
+              </article>
+
+              <p class='more'><a href='#'>See more...</a></p>
+          </div>
     </section>
 
+    <a name='latest_features'>
+    <section class='latest_reviews row latest_features'></a>
+      <h2>latest features</h2>
+      <article class='quarter_width'><a href='#'><img src='https://i.ytimg.com/vi/Pm0oCSfzWyU/hqdefault.jpg'><h4>Scenes Remade Better – Tron & Tron Legacy</h4>
+      <p>Tron Legacy was seen as a remake/sequel to Tron. The story may not have been improved by much but there has been so much more than that....
+      Date: 13th September, 2015</p></a></article>
+      <article class='quarter_width'><a href='#'><img src='https://i.ytimg.com/vi/eK39kKMINHo/hqdefault.jpg'><h4>Iconic Scenes – T-Rex Encounter (Jurassic Park)</h4>
+      <p>This scene has been so perfectly done that it still to this day hasn't been matched. It has a perfect use of a mixture of animatronics and CGI, unlike today where everything would have been CGI. This is what truly has made the special effects stand out....
+      Date: 5th September, 2015</p></a></article>
+      <article class='quarter_width'><a href='#'><img src='https://i.ytimg.com/vi/XBdhhImAybE/hqdefault.jpg'><h4>Greatest Intros - Superman (1978)</h4>
+      <p>Oh what an intro! Nothing has been so respectful and yet bring some new as well as the Richard Donner's Superman. You knew from the beginning that you were going to get something special!...
+Date: 5th September, 2015</p></a></article>
+      <article class='quarter_width'><a href='#'><img src='https://i.ytimg.com/vi/5Z0c-8IbYRU/hqdefault.jpg'>
+        <h4>Iconic Scenes – Airport Scene (Casablanca)</h4>
+        <p>One of the most beloved scenes ever filmed. The script and acting is all done perfectly. The special effects of the plane unfortunately have not aged...
+Date: 1st September, 2015</p>
+      </a>
+      </article>
+      <article class='quarter_width'><a href='#'><img src='https://i.ytimg.com/vi/dXBedBmuWp4/hqdefault.jpg'><h4>Iconic Scenes - Lightning bolt at the Clock Tower (Back to the Future)</h4>
+      <p>
+This is the finale of the first Back to the Future film, and boy does this get the blood pumping. With Doc Brown running around trying to get the cabl...
+Date: 1st September, 2015stand out....
+      Date: 5th September, 2015</p></a></article>
+      <article class='quarter_width'><a href='#'><img src='http://images.low-emedia.com/Star-Wars-Han-Chewie.png'><h4>Should Disney make any more Star Wars films?</h4>
+      <p>
+Later this year, the start of a new trilogy will be released, and next year we have a spinoff film, called Rogue One. The question is do we really want or need any more Star Wars films?...
+Date: 4th June, 2015</p></a></article>
+      <article class='quarter_width'><a href='#'><img src='http://images.low-emedia.com/CitizenKane.jpg'>
+        <h4>Is Citizen Kane still the greatest film ever made?</h4>
+        <p>
+Considering how old Citizen Kane is and how much filmmaking has evolved over the years, it does seem a little strange that this could still be called the greatest film ever made....
+Date: 31st May, 2015</p>
+      </a>
+      </article>
+      <article class='quarter_width'><a href='#'><img src='http://images.low-emedia.com/dark-knight-rises.jpg'><h4>Why the Dark Knight Trilogy was so overrated!</h4>
+      <p>
+There have been many versions of Batman, with another coming our way in Batman Vs Superman: Dawn of Justice. So I thought we would look at the last version, which was very successful....
+Date: 29th March, 2015</p></a></article>
+      <article class='quarter_width'><a href='#'><img src='http://images.low-emedia.com/Star-Wars-Han-Chewie.png'><h4>How the Star Wars Prequels story could have been improved</h4>
+      <p>
+The way Star Wars prequels are right now worked in some points but were lacking in others. I personally found them reasonably enjoyable, bearing in mind I wasn't expecting Oscar winning performances. All I was expecting was to be entertained, and have my nostalgia peaked with the birth of Darth Vader....
+Date: 16th February, 2015</p></a></article>
+              <p class='more'><a href='#'>See more...</a></p>
+    </section>
+
+</main>
 <script>
     jQuery(function() {
         jQuery('a[href*=#]:not([href=#])').click(function() {

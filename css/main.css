@@ -22,25 +22,33 @@ Ver: 0.0.1
   background: url(../img/preloader_5.gif) center no-repeat white;
 }
 
+/* line 20, ../scss/base/_base.scss */
+body {
+  max-width: 1000px;
+  margin: 0 auto !important;
+  display: block;
+  position: relative;
+}
+
 /* MODULES - Individual site components */
-/* line 13, ../scss/modules/_typography.scss */
+/* line 17, ../scss/modules/_typography.scss */
 .title_slide {
   font-size: 3rem;
   font-family: "Cabin Sketch", cursive;
   padding: 1rem;
 }
 
-/* line 18, ../scss/modules/_typography.scss */
+/* line 22, ../scss/modules/_typography.scss */
 .title_slide h1 {
   font-weight: 700;
 }
 
-/* line 22, ../scss/modules/_typography.scss */
+/* line 26, ../scss/modules/_typography.scss */
 .title_h1 {
   color: black;
 }
 
-/* line 26, ../scss/modules/_typography.scss */
+/* line 30, ../scss/modules/_typography.scss */
 .best_sellers h1 {
   margin-top: 2rem;
   background: #aa000c;
@@ -51,40 +59,50 @@ Ver: 0.0.1
   font-size: 5rem;
 }
 
-/* line 35, ../scss/modules/_typography.scss */
+/* line 39, ../scss/modules/_typography.scss */
 .title h4 {
   border-top: 2px solid grey;
   border-bottom: 2px solid grey;
   margin-bottom: 4rem;
 }
 
-/* line 41, ../scss/modules/_typography.scss */
+/* line 45, ../scss/modules/_typography.scss */
 .best_sellers h3 {
   font-weight: 600;
 }
 
-/* line 45, ../scss/modules/_typography.scss */
+/* line 49, ../scss/modules/_typography.scss */
 .page3 h4 {
   text-transform: uppercase;
 }
 
-/* line 50, ../scss/modules/_typography.scss */
+/* line 52, ../scss/modules/_typography.scss */
+article p {
+  font-size: 1.3rem;
+}
+
+/* line 55, ../scss/modules/_typography.scss */
+article {
+  text-align: justify;
+}
+
+/* line 60, ../scss/modules/_typography.scss */
 .fa-facebook-official:hover {
   color: #324c8d;
 }
 
-/* line 54, ../scss/modules/_typography.scss */
+/* line 64, ../scss/modules/_typography.scss */
 .fa-twitter:hover {
   color: #058df1;
 }
 
-/* line 57, ../scss/modules/_typography.scss */
+/* line 67, ../scss/modules/_typography.scss */
 .fa-youtube:hover {
   color: #d21a1d;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 62, ../scss/modules/_typography.scss */
+  /* line 72, ../scss/modules/_typography.scss */
   .title_slide {
     font-size: 1.5rem;
   }
@@ -143,166 +161,266 @@ Ver: 0.0.1
 }
 
 /* line 34, ../scss/modules/_sections.scss */
-.page2 {
-  width: 95%;
-  margin: auto;
-}
-
-/* line 39, ../scss/modules/_sections.scss */
 .page2 h3 {
   padding-bottom: 4rem;
 }
 
-/* line 44, ../scss/modules/_sections.scss */
+/* line 39, ../scss/modules/_sections.scss */
 #logoParade, #logoParadeTwo, #logoParadeThree {
   width: 100%;
   height: 200px;
   position: relative;
 }
 
-/* line 49, ../scss/modules/_sections.scss */
+/* line 44, ../scss/modules/_sections.scss */
 div.scrollableArea a {
   display: block;
   padding-right: 25px;
   float: left;
 }
 
-/* line 54, ../scss/modules/_sections.scss */
+/* line 49, ../scss/modules/_sections.scss */
 .scrollableArea a img {
   max-height: 200px;
 }
 
-/* line 58, ../scss/modules/_sections.scss */
+/* line 53, ../scss/modules/_sections.scss */
 #logoParade {
   margin-bottom: 5rem;
 }
 
-/* line 62, ../scss/modules/_sections.scss */
+/* line 57, ../scss/modules/_sections.scss */
 .latest_reviews {
   position: relative;
   background: black;
-  padding-top: 4rem;
   color: white;
+  padding: 4rem 5rem;
+  width: 100%;
+  margin: 0 auto;
 }
 
-/* line 68, ../scss/modules/_sections.scss */
-.page3 {
-  margin: auto;
-  width: 95%;
+/* line 65, ../scss/modules/_sections.scss */
+.latest_reviews h2 {
+  border-bottom: 1px solid #9d9fa3;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  text-transform: uppercase;
 }
 
-/* line 78, ../scss/modules/_sections.scss */
-.col-sm-12 {
-  border: 1px solid rgba(255, 255, 255, 0);
+/* line 73, ../scss/modules/_sections.scss */
+article:nth-child(1) {
+  width: 45%;
+  overflow: hidden;
+  float: left;
+  max-height: none;
 }
 
 /* line 81, ../scss/modules/_sections.scss */
-.col-md-12 {
-  border-radius: 10px;
-  margin-bottom: 1rem;
+article img {
+  width: 50%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-right: 2px solid #64c2b0;
+  float: left;
+  margin: 0 1.5rem 1rem 0;
 }
 
-/* line 86, ../scss/modules/_sections.scss */
-.one {
-  padding-left: 0;
-  padding-right: 0;
-  overflow: hidden;
-  border-top: 2px solid black;
+/* line 89, ../scss/modules/_sections.scss */
+.reviews {
+  display: block;
 }
 
 /* line 92, ../scss/modules/_sections.scss */
-.one img {
-  width: 100%;
-  border-bottom: 3px solid red;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
+article {
+  width: 50%;
+  float: right;
+  overflow: hidden;
 }
 
-/* line 98, ../scss/modules/_sections.scss */
-.one_text_review {
-  padding-top: 1.5rem;
-}
-
-/* line 101, ../scss/modules/_sections.scss */
-.one_text_review h4 {
-  padding: none !important;
+/* line 99, ../scss/modules/_sections.scss */
+.articles a, .quarter_width a {
+  text-decoration: none;
+  display: block;
+  color: #9d9fa3;
 }
 
 /* line 105, ../scss/modules/_sections.scss */
-.title h4 {
-  padding: 1rem;
-}
-
-/* line 108, ../scss/modules/_sections.scss */
-.two img {
+.chasing_amy img, .quarter_width img {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom: 2px solid #64c2b0;
   width: 100%;
-  min-height: 164px;
-  border-bottom: 2px solid black;
-  border-top: 2px solid black;
-  border-right: 3px solid #1dff3b;
+  border-right: none;
+  border-bottom-left-radius: 0;
 }
 
-/* line 115, ../scss/modules/_sections.scss */
-.two {
-  padding: 0;
-  width: 50%;
-  float: left;
+/* line 113, ../scss/modules/_sections.scss */
+.quarter_width img {
+  height: 160px;
 }
 
-/* line 121, ../scss/modules/_sections.scss */
-.two_1 {
-  width: 50%;
-  float: left;
+/* line 116, ../scss/modules/_sections.scss */
+.chasing_amy img {
+  height: 100%;
 }
 
-/* line 126, ../scss/modules/_sections.scss */
-.little_shop_of_horrors {
-  padding-left: 0;
-  border-left: 2px solid black;
-  overflow: hidden;
-  height: 164px;
+/* line 120, ../scss/modules/_sections.scss */
+.quarter_width {
+  width: 30%;
+  margin-right: 3%;
   margin-bottom: 2rem;
+  height: 350px;
+  overflow: hidden;
+}
+
+/* line 128, ../scss/modules/_sections.scss */
+.quarter_width:nth-child(3n+0) {
+  margin-right: 3%;
 }
 
 /* line 133, ../scss/modules/_sections.scss */
-.daffy_duck {
-  overflow: hidden;
-  padding: 0;
-  border-top: 2px solid black;
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  text-overflow: -o-ellipsis-lastline;
 }
 
-/* line 138, ../scss/modules/_sections.scss */
-.daffy_duck img {
-  border-left: 2px solid black;
-  border-right: 2px solid black;
+/* line 141, ../scss/modules/_sections.scss */
+.big_image_left {
+  float: left;
+  padding-bottom: 2rem;
+}
+
+/* line 147, ../scss/modules/_sections.scss */
+.big_image_right {
+  float: right;
+}
+
+/* line 150, ../scss/modules/_sections.scss */
+article:hover a h4 {
+  color: #e61277;
+}
+
+/* line 154, ../scss/modules/_sections.scss */
+.tron {
   width: 100%;
-  border-bottom: 3px solid #1dff3b;
 }
 
-/* line 144, ../scss/modules/_sections.scss */
-.daffy_duck a, .little_shop_of_horrors a {
-  text-decoration: none;
+/* line 158, ../scss/modules/_sections.scss */
+.tron img {
+  width: 45%;
+  height: 160px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom: none;
+  border-right: 2px solid #64c2b0;
+  margin-right: 3rem;
+}
+
+/* line 168, ../scss/modules/_sections.scss */
+.tron h4 {
+  padding-top: 2rem;
+}
+
+/* line 172, ../scss/modules/_sections.scss */
+.clearfix {
+  clear: both;
+}
+
+/* line 176, ../scss/modules/_sections.scss */
+.latest_features {
+  text-align: justify;
+  padding-right: 3.5%;
+}
+
+/* line 181, ../scss/modules/_sections.scss */
+.more {
+  float: right;
+  border: 1px solid #9d9fa3;
+  padding: 1rem;
+  transition: background-color 0.5s ease;
+}
+
+/* line 187, ../scss/modules/_sections.scss */
+.more a {
+  color: #9d9fa3;
+}
+
+/* line 190, ../scss/modules/_sections.scss */
+.more:hover {
+  background: #e61277;
+  border: 1px solid white;
+}
+
+/* line 195, ../scss/modules/_sections.scss */
+.more:hover a {
   color: white;
 }
 
-/* line 148, ../scss/modules/_sections.scss */
-.latest review a:hover {
-  text-decoration: none;
-}
+@media screen and (max-width: 768px) {
+  /* line 200, ../scss/modules/_sections.scss */
+  article {
+    width: 100% !important;
+  }
 
+  /* line 203, ../scss/modules/_sections.scss */
+  .quarter_width img {
+    height: 10%;
+    width: 50%;
+  }
+
+  /* line 204, ../scss/modules/_sections.scss */
+  .quarter_width {
+    height: 200px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Styles */
+  /* line 209, ../scss/modules/_sections.scss */
+  .form-control {
+    font-size: 10px;
+    padding: 3px 8px;
+  }
+
+  /* line 210, ../scss/modules/_sections.scss */
+  .navbar-form {
+    padding: 0;
+    margin: 5px;
+  }
+
+  /* line 211, ../scss/modules/_sections.scss */
+  .shrink .navbar-brand {
+    font-size: 1.8rem !important;
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* line 217, ../scss/modules/_sections.scss */
+  .navbar li {
+    font-size: 1.3rem !important;
+  }
+
+  /* line 218, ../scss/modules/_sections.scss */
+  .shrink .navbar-brand {
+    font-size: 2rem !important;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
 /* LAYOUTS - Page laout styles */
 /* line 1, ../scss/layouts/_nav.scss */
 .navbar-sub li {
-  padding-right: 1rem;
   padding-bottom: 1rem;
 }
 
-/* line 5, ../scss/layouts/_nav.scss */
+/* line 4, ../scss/layouts/_nav.scss */
 .navbar {
   margin-bottom: 0;
 }
 
-/* line 8, ../scss/layouts/_nav.scss */
+/* line 7, ../scss/layouts/_nav.scss */
 .navbar-inverse {
   border-radius: 0;
   background-color: black;
@@ -312,12 +430,13 @@ div.scrollableArea a {
   transition: font-size 1s, position 1s, background-color 1s, font-weight 1s;
 }
 
-/* line 17, ../scss/layouts/_nav.scss */
+/* line 16, ../scss/layouts/_nav.scss */
 .shrink {
   font-weight: 700;
   position: fixed;
   background-color: white;
   color: black;
+  left: 0;
 }
 
 /* line 26, ../scss/layouts/_nav.scss */
@@ -330,7 +449,7 @@ div.scrollableArea a {
 
 /* line 31, ../scss/layouts/_nav.scss */
 #navbar li {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
 }
 
@@ -352,6 +471,13 @@ div.scrollableArea a {
 /* line 44, ../scss/layouts/_nav.scss */
 .navbar-inverse {
   border: none !important;
+}
+
+/* line 48, ../scss/layouts/_nav.scss */
+.container {
+  width: 100%;
+  max-width: 1000px;
+  padding: 10px 20px;
 }
 
 /* line 1, ../scss/layouts/_header.scss */
